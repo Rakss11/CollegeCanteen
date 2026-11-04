@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(120deg, #e85d04, #f48c06);
+    color: white;
+    text-align: center;
+    padding: 28px 12px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #9d3c02;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.student-box,
+.cart-box,
+.history-box {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+input {
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    width: min(100%, 280px);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+}
+
+.food {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px #00000015;
+    padding-bottom: 18px;
+    transition: transform 0.2s;
+}
+
+.food:hover {
+    transform: translateY(-4px);
+}
+
+.food img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.food h3 {
+    margin-bottom: 5px;
+}
+
+.food p {
+    color: #e85d04;
+    font-weight: bold;
+}
+
+button {
+    background: #218838;
+    color: white;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.qty-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.remove-btn {
+    background: #dc3545;
+    margin-left: 8px;
+}
+
+.order-btn {
+    background: #e85d04;
+    padding: 12px 25px;
+    font-size: 16px;
+}
+
+.cart-item,
+.history-item {
+    background: #fff8f0;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.status {
+    color: #087f5b;
+    font-weight: bold;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 12px;
+    }
+}

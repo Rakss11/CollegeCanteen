@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Canteen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍽️ College Canteen</h1>
+    <p>Fresh Food, Happy Students!</p>
+</header>
+
+<main>
+    <section class="student-box">
+        <h2>Student Details</h2>
+        <input id="studentName" placeholder="Enter Student Name">
+        <input id="regNo" placeholder="Enter Register Number">
+    </section>
+
+    <h2 class="section-title">Our Food Menu</h2>
+    <div id="menu" class="menu"></div>
+
+    <section class="cart-box">
+        <h2>🛒 Your Cart</h2>
+        <div id="cart"></div>
+        <h3>Total Amount: ₹<span id="total">0</span></h3>
+        <button class="order-btn" onclick="placeOrder()">
+            Place Order
+        </button>
+    </section>
+
+    <section class="history-box">
+        <h2>📋 Order History</h2>
+        <div id="history"></div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 College Canteen Ordering System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
